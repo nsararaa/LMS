@@ -12,19 +12,19 @@ struct tabBar: View {
         TabView{
             
             
-            Text("home")
+            HomeView()
                 .tabItem{
                     (Image(systemName:"house")) }
-            Text("courses")
+            CourseView()
                 .tabItem{
                     (Image(systemName:"note.text"))}
-            Text("Profile")
+            ProfileView()
                 .tabItem{
                     (Image(systemName:"person"))}
             
         }
         .foregroundColor(.black)
-        .accentColor(.yellow)
+        .accentColor(.white)
         
     }
     
