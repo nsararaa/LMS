@@ -15,7 +15,9 @@
 		91B2CE9E2C06EE5400A00489 /* LMSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CE9D2C06EE5400A00489 /* LMSUITests.swift */; };
 		91B2CEA02C06EE5400A00489 /* LMSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CE9F2C06EE5400A00489 /* LMSUITestsLaunchTests.swift */; };
 		91B2CEAE2C06EEB900A00489 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CEAD2C06EEB900A00489 /* ProfileView.swift */; };
-		91B2CEB02C06EEE700A00489 /* tabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CEAF2C06EEE700A00489 /* tabBar.swift */; };
+		91B2CEB22C06F09000A00489 /* CourseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CEB12C06F09000A00489 /* CourseView.swift */; };
+		91B2CEB42C06F0AA00A00489 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CEB32C06F0AA00A00489 /* HomeView.swift */; };
+		91B2CEB72C06F0E200A00489 /* TabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CEB62C06F0E200A00489 /* TabBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +49,9 @@
 		91B2CE9D2C06EE5400A00489 /* LMSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSUITests.swift; sourceTree = "<group>"; };
 		91B2CE9F2C06EE5400A00489 /* LMSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		91B2CEAD2C06EEB900A00489 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		91B2CEAF2C06EEE700A00489 /* tabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tabBar.swift; sourceTree = "<group>"; };
+		91B2CEB12C06F09000A00489 /* CourseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseView.swift; sourceTree = "<group>"; };
+		91B2CEB32C06F0AA00A00489 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		91B2CEB62C06F0E200A00489 /* TabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,12 +102,12 @@
 		91B2CE812C06EE5200A00489 /* LMS */ = {
 			isa = PBXGroup;
 			children = (
+				91B2CEB52C06F0D600A00489 /* TabBar */,
 				91B2CEAC2C06EEAB00A00489 /* Views */,
 				91B2CE822C06EE5200A00489 /* LMSApp.swift */,
 				91B2CE842C06EE5200A00489 /* ContentView.swift */,
 				91B2CE862C06EE5300A00489 /* Assets.xcassets */,
 				91B2CE882C06EE5300A00489 /* Preview Content */,
-				91B2CEAF2C06EEE700A00489 /* tabBar.swift */,
 			);
 			path = LMS;
 			sourceTree = "<group>";
@@ -137,8 +141,18 @@
 			isa = PBXGroup;
 			children = (
 				91B2CEAD2C06EEB900A00489 /* ProfileView.swift */,
+				91B2CEB12C06F09000A00489 /* CourseView.swift */,
+				91B2CEB32C06F0AA00A00489 /* HomeView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		91B2CEB52C06F0D600A00489 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				91B2CEB62C06F0E200A00489 /* TabBar.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,8 +287,10 @@
 			files = (
 				91B2CE852C06EE5200A00489 /* ContentView.swift in Sources */,
 				91B2CEAE2C06EEB900A00489 /* ProfileView.swift in Sources */,
+				91B2CEB22C06F09000A00489 /* CourseView.swift in Sources */,
+				91B2CEB72C06F0E200A00489 /* TabBar.swift in Sources */,
+				91B2CEB42C06F0AA00A00489 /* HomeView.swift in Sources */,
 				91B2CE832C06EE5200A00489 /* LMSApp.swift in Sources */,
-				91B2CEB02C06EEE700A00489 /* tabBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
