@@ -6,6 +6,8 @@
 //
 
 import SwiftUI
+import SQLite3
+
 
 struct SubjectView: View {
     let subjectName: String
@@ -101,6 +103,7 @@ struct SubjectInformation {
 struct Assignment: Identifiable {
     let id: String
     let dueDate: String
+    //assign Date
 }
 
 struct Quiz: Identifiable {

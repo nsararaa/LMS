@@ -22,3 +22,15 @@ const char * returnName() {
     return a.getName();
     
 }
+
+void handleEmail(const std::string &email) {
+    std::cout << "Email received in C++: " << email << std::endl;
+}
+
+
+extern "C" void sendEmailToCPP(const char *email) {
+    if (email != nullptr) {
+        std::string cppEmail(email);
+       // handleEmail(cppEmail);
+    }
+}

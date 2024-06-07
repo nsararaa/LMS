@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+//import SQLite3
 
 struct ProfileView: View {
     var body: some View {
@@ -20,6 +21,7 @@ struct ProfileView: View {
                 }
                 VStack{
                     
+                    //Int(CInt());
                 
                    
                     Text(String(cString: returnName())).font( .system(size:19)).fontWeight(.semibold)

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		91327F542C12E6F900BCC67E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91327F522C12E6F900BCC67E /* main.cpp */; };
 		916184722C070C0F00597931 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916184712C070C0F00597931 /* SubjectView.swift */; };
+		918F5E022C13428400F2BB1C /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 918F5E012C13428400F2BB1C /* LoginView.swift */; };
 		91B2CE832C06EE5200A00489 /* LMSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CE822C06EE5200A00489 /* LMSApp.swift */; };
 		91B2CE852C06EE5200A00489 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CE842C06EE5200A00489 /* ContentView.swift */; };
 		91B2CE872C06EE5300A00489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B2CE862C06EE5300A00489 /* Assets.xcassets */; };
@@ -44,6 +45,7 @@
 		91327F522C12E6F900BCC67E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		91327F552C12EA9E00BCC67E /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
 		916184712C070C0F00597931 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		918F5E012C13428400F2BB1C /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		91B2CE7F2C06EE5200A00489 /* LMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B2CE822C06EE5200A00489 /* LMSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSApp.swift; sourceTree = "<group>"; };
 		91B2CE842C06EE5200A00489 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				91B2CEAD2C06EEB900A00489 /* ProfileView.swift */,
 				91B2CEB12C06F09000A00489 /* CourseView.swift */,
 				91B2CEB32C06F0AA00A00489 /* HomeView.swift */,
+				918F5E012C13428400F2BB1C /* LoginView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				91B2CE852C06EE5200A00489 /* ContentView.swift in Sources */,
 				91B2CEAE2C06EEB900A00489 /* ProfileView.swift in Sources */,
 				916184722C070C0F00597931 /* SubjectView.swift in Sources */,
+				918F5E022C13428400F2BB1C /* LoginView.swift in Sources */,
 				91B2CEB22C06F09000A00489 /* CourseView.swift in Sources */,
 				91B2CEB72C06F0E200A00489 /* TabBar.swift in Sources */,
 				91B2CEB42C06F0AA00A00489 /* HomeView.swift in Sources */,

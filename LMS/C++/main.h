@@ -10,6 +10,8 @@ extern "C"
 #endif
 
 const char * returnName();
+void sendEmailToCPP(const char *email);
+
 
 #ifdef __cplusplus
 }
