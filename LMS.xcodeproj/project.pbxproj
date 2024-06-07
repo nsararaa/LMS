@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		91327F542C12E6F900BCC67E /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 91327F522C12E6F900BCC67E /* main.cpp */; };
+		916184722C070C0F00597931 /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 916184712C070C0F00597931 /* SubjectView.swift */; };
 		91B2CE832C06EE5200A00489 /* LMSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CE822C06EE5200A00489 /* LMSApp.swift */; };
 		91B2CE852C06EE5200A00489 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B2CE842C06EE5200A00489 /* ContentView.swift */; };
 		91B2CE872C06EE5300A00489 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91B2CE862C06EE5300A00489 /* Assets.xcassets */; };
@@ -38,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		91327F512C12E6F900BCC67E /* LMS-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LMS-Bridging-Header.h"; sourceTree = "<group>"; };
+		91327F522C12E6F900BCC67E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		91327F552C12EA9E00BCC67E /* main.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = main.h; sourceTree = "<group>"; };
+		916184712C070C0F00597931 /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
 		91B2CE7F2C06EE5200A00489 /* LMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		91B2CE822C06EE5200A00489 /* LMSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LMSApp.swift; sourceTree = "<group>"; };
 		91B2CE842C06EE5200A00489 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		91327F502C12E6CA00BCC67E /* C++ */ = {
+			isa = PBXGroup;
+			children = (
+				91327F522C12E6F900BCC67E /* main.cpp */,
+				91327F552C12EA9E00BCC67E /* main.h */,
+				91327F512C12E6F900BCC67E /* LMS-Bridging-Header.h */,
+			);
+			path = "C++";
+			sourceTree = "<group>";
+		};
+		916184702C070BF900597931 /* SupportingViews */ = {
+			isa = PBXGroup;
+			children = (
+				916184712C070C0F00597931 /* SubjectView.swift */,
+			);
+			path = SupportingViews;
+			sourceTree = "<group>";
+		};
 		91B2CE762C06EE5200A00489 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +126,7 @@
 		91B2CE812C06EE5200A00489 /* LMS */ = {
 			isa = PBXGroup;
 			children = (
+				91327F502C12E6CA00BCC67E /* C++ */,
 				91B2CEB52C06F0D600A00489 /* TabBar */,
 				91B2CEAC2C06EEAB00A00489 /* Views */,
 				91B2CE822C06EE5200A00489 /* LMSApp.swift */,
@@ -140,6 +165,7 @@
 		91B2CEAC2C06EEAB00A00489 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				916184702C070BF900597931 /* SupportingViews */,
 				91B2CEAD2C06EEB900A00489 /* ProfileView.swift */,
 				91B2CEB12C06F09000A00489 /* CourseView.swift */,
 				91B2CEB32C06F0AA00A00489 /* HomeView.swift */,
@@ -223,6 +249,7 @@
 				TargetAttributes = {
 					91B2CE7E2C06EE5200A00489 = {
 						CreatedOnToolsVersion = 14.3.1;
+						LastSwiftMigration = 1430;
 					};
 					91B2CE8E2C06EE5400A00489 = {
 						CreatedOnToolsVersion = 14.3.1;
@@ -287,9 +314,11 @@
 			files = (
 				91B2CE852C06EE5200A00489 /* ContentView.swift in Sources */,
 				91B2CEAE2C06EEB900A00489 /* ProfileView.swift in Sources */,
+				916184722C070C0F00597931 /* SubjectView.swift in Sources */,
 				91B2CEB22C06F09000A00489 /* CourseView.swift in Sources */,
 				91B2CEB72C06F0E200A00489 /* TabBar.swift in Sources */,
 				91B2CEB42C06F0AA00A00489 /* HomeView.swift in Sources */,
+				91327F542C12E6F900BCC67E /* main.cpp in Sources */,
 				91B2CE832C06EE5200A00489 /* LMSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -446,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LMS/Preview Content\"";
@@ -464,6 +494,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = S1.LMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LMS/C++/LMS-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -474,6 +506,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"LMS/Preview Content\"";
@@ -492,6 +525,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = S1.LMS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "LMS/C++/LMS-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

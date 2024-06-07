@@ -11,7 +11,7 @@ struct ProfileView: View {
     var body: some View {
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors:[.white, .teal, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors:[.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
 
                 .ignoresSafeArea()
             VStack{
@@ -20,9 +20,9 @@ struct ProfileView: View {
                 }
                 VStack{
                     
-                    
-                    
-                    Text("Sara Noor").font( .system(size:19)).fontWeight(.semibold)
+                
+                   
+                    Text(String(cString: returnName())).font( .system(size:19)).fontWeight(.semibold)
                         .foregroundColor(.black)
                         .padding(.vertical, 1)
                     

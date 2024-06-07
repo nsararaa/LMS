@@ -24,7 +24,7 @@ struct tabBar: View {
             
         }
         .foregroundColor(.black)
-        .accentColor(.white)
+        .accentColor(.black)
         
     }
     

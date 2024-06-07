@@ -7,16 +7,33 @@
 
 import SwiftUI
 
+
+struct CustomButton: View {
+    let title: String
+  
+    var body: some View {
+        Button(action: {}) {
+            Text(title)
+                .font(.system(size: 20))
+                .fontWeight(.semibold)
+                .foregroundColor(.white)
+                .padding()
+                .frame(minWidth: 150, minHeight: 110)
+        }
+        .buttonStyle(.borderedProminent)
+        .tint(.black)
+    }
+}
 struct HomeView: View {
     var body: some View {
         @State var color: Color = .white
         @State var date = Date.now
         ZStack{
-            LinearGradient(gradient: Gradient(colors:[.white, .teal , . black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            LinearGradient(gradient: Gradient(colors:[.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
                 .ignoresSafeArea()
             VStack(){
                 VStack(){
-                    ColorPicker("", selection: $color,supportsOpacity: false).frame(maxWidth: .infinity, alignment: .leading)
+//                    ColorPicker("", selection: $color,supportsOpacity: false).frame(maxWidth: .infinity, alignment: .leading)
                     
                 }
                 HStack{
@@ -33,7 +50,18 @@ struct HomeView: View {
                 .padding(.bottom, 20)
                
                 VStack(){
-                    Text("Announcement").font(.system(size:20)).fontWeight(.semibold).padding(.leading, -160)
+                    Text("Announcements").font(.system(size:20)).fontWeight(.semibold).padding(.leading, -160)
+                        
+                }
+                .padding(.bottom, 130)
+                ScrollView(.horizontal){
+                    HStack(spacing: 15){
+                        
+                        CustomButton(title: "GPA: ")
+                        CustomButton(title: "Semester: ")
+                        CustomButton(title: "Degree: ")
+                        
+                    }.padding(.leading, 10)
                 }
                 Spacer()
             }

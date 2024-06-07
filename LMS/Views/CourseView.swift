@@ -6,85 +6,89 @@
 //
 
 import SwiftUI
-
-struct CustomButton: View {
+struct CustomNavigationButton: View {
     let title: String
-    let act: () -> Void
-    
     var body: some View {
-        Button(action: act) {
+        NavigationLink(destination: SubjectView(subjectName: title)) {
             Text(title)
                 .font(.system(size: 20))
                 .fontWeight(.semibold)
-                .foregroundColor(.black)
-                .padding()
-                .frame(minWidth: 150, minHeight: 150)
+                .foregroundColor(.white)
+                .frame(width: 170, height: 170)
+                .background(Color.black)
+                .cornerRadius(40)
+                .shadow(radius: 5)
         }
-        .buttonStyle(.borderedProminent)
-        .tint(.white)
+     
     }
 }
-
-struct CourseView: View {
-    var pad : CGFloat = 16
+struct CustomButtonHori2: View {
+    let title: [String]
+  
     var body: some View {
         
         ZStack{
-            LinearGradient(gradient: Gradient(colors:[.white, .teal, .black]), startPoint: .topLeading, endPoint: .bottomTrailing)
+            NavigationView(){
+                VStack{
+                    HStack{
+                        CustomNavigationButton(title: title[0])
+                            .padding(.horizontal, 10)
+                        CustomNavigationButton(title: title[1])
+                    }
+                    HStack{
+                        CustomNavigationButton(title: title[2])
+                            .padding(.horizontal, 10)
+                        CustomNavigationButton(title: title[3])
+                    }
+                    HStack{
+                        CustomNavigationButton(title: title[4])
+                            .padding(.horizontal, 10)
+                        CustomNavigationButton(title: title[5])
+                    }
+                }
+                
+            }
+            .tint(.black)
+            
+            
+        }
+    }
+}
+
+
+
+struct CourseView: View {
+    var pad : CGFloat = 16
+    var NOC: Int = 5
+    var title1 = "OOP"
+    
+    var body: some View {
+    
+        let titles: [String] = ["OOP", "Probability & Statistic", "DLD", "Database", "Linear Algebra", "Computer Networks"]
+        
+        ZStack{
+            LinearGradient(gradient: Gradient(colors:[.white]), startPoint: .topLeading, endPoint: .bottomTrailing)
                             .ignoresSafeArea()
             VStack(alignment: .leading) {
                 
-                Image(systemName: "arrow.backward").resizable()
-                    .frame(width: 27, height: 20)
-                    .aspectRatio(contentMode: .fill)
-                    .padding(.leading,pad)
-                    
-                    .onTapGesture {}
+//                Image(systemName: "arrow.backward").resizable()
+//                    .frame(width: 27, height: 20)
+//                    .aspectRatio(contentMode: .fill)
+//                    .padding(.leading,pad)
+//
+//                    .onTapGesture {}
                 
                 Text("My Courses")
                     .font(.system(size: 26))
                     .fontWeight(.bold)
                     .padding(.leading, pad)
-                    .padding(.bottom, 30)
+
                     
                 VStack{
-                    HStack{
-                        CustomButton(title:"OOP"){
-                            //action
-                        }
-                        .padding(.leading,14)
-                        
-                        CustomButton(title:"Probability & Statistic"){
-                            //action
-                        }
-                        .padding(.leading,10)
-                    }
-                    .padding(.bottom, 20)
-                    HStack{
-                        CustomButton(title:"Linear Algebra"){
-                            //action
-                        }
-                        .padding(.leading,14)
-                        
-                        CustomButton(title:"Database"){
-                            //action
-                        }
-                        .padding(.leading,10)
-                    }
-                    .padding(.bottom, 20)
-                    HStack{
-                        CustomButton(title:"DLD"){
-                            //action
-                        }
-                        .padding(.leading,14)
-                        
-                        CustomButton(title:"Computer Networks"){
-                            //action
-                        }
-                        .padding(.leading,10)
-                    }
-                    .padding(.bottom, 70)
+                    CustomButtonHori2(title: titles)
                 }
+                .padding(.bottom, 30)
+                
            
             }
             .frame(maxWidth: .infinity, alignment: .leading)
